@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
   /* outline: 1px solid red; */
 }
 
@@ -94,12 +93,12 @@ header {
 }
 .header__text > h2 {
   color: white;
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   /* font-size: 5vw; */
   font-weight: 600;
   letter-spacing: 2px;
-  line-height: 1.25;
-  /* line-height: clamp(6, 20vw, 6); */
+  line-height: 1.5;
+
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
 }
 .header__contact-btn {
@@ -112,16 +111,20 @@ header {
   padding: 1.25rem 2rem;
   background-color: rgba(0, 0, 0, 0.25);
   border: 2px solid rgb(212, 175, 55);
-
   border-radius: 0.25rem;
   min-width: 9rem;
 }
 
-/* section2 */
 .section {
   width: 100%;
-  margin-top: 12rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* section2 */
 
 .section2__container {
   display: flex;
@@ -192,21 +195,79 @@ header {
   margin-top: 1rem;
 }
 
-.section__contact {
+.section-contact {
   background: rgb(166, 138, 82);
   background: radial-gradient(
     circle,
     rgba(166, 138, 82, 1) 0%,
-    rgba(147, 111, 51, 1) 100%
+    rgb(80, 60, 25) 100%
   );
+  min-height: 40vh;
 }
 
-.section__contact__content {
+.section-contact__content {
   margin-left: 2rem;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 
-.section__contact__title {
+.section-contact__title {
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 6rem;
+}
+.section-contact__title > h2 {
   text-align: center;
   font-size: 3rem;
+  color: white;
+}
+.section-contact__title > p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.section-contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 0.75rem;
+}
+
+.section-contact__form > * {
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.15rem;
+  outline: 0;
+  border: 0;
+}
+
+.section-contact__form > textarea {
+  height: 6rem;
+}
+
+.section-contact__form > button {
+  width: 200px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+  background: rgb(43, 35, 21);
+}
+
+.section-contact__social {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.section-contact__social > h2 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+}
+.section-contact__social > a > .fa-brands {
+  margin: 1rem;
+  font-size: 2rem;
+  font-size: 2rem;
+  color: white;
 }
