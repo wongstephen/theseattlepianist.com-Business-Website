@@ -141,7 +141,7 @@ nav {
 .section2,
 .section3,
 .section4 {
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 1rem;
 }
 .section__title {
@@ -198,7 +198,7 @@ nav {
 .card__desc {
   font-family: var(--secondary-font);
   margin: 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .section4 {
@@ -253,6 +253,26 @@ nav {
   width: 1px;
 }
 
+.form_btn {
+  max-width: 10rem;
+  padding: 0.5rem 1rem;
+  background-color: #d4af37;
+  border: 0;
+  outline: 0;
+  font-family: var(--main-font);
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.section4__social {
+  margin-top: 4rem;
+}
+.section4__icons {
+  margin: 2rem;
+  font-size: 2rem;
+  color: #6e5b1c;
+  text-align: center;
+}
 @media screen and (max-width: 400px) {
   .header__content__h2 {
     font-size: 2rem;
