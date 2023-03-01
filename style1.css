@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Libre Baskerville", serif;
+}
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid blue; */
+}
+
+html,
+body,
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+  letter-spacing: 1.25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme("borderColor.DEFAULT", currentColor);
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.app {
+  max-width: 1440;
+}
+
+header {
+  background-image: url("/public/assets/ebuen-clemente-jr-H5Iw3Xz0vxM-unsplash.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav__title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #d4af37;
+  font-family: var(--main-font);
+}
+
+.nav__links {
+  text-align: center;
+}
+
+.nav-icons {
+  font-size: 1.5rem;
+  color: #d4af37;
+  padding: 1rem;
+  margin: 0;
+}
+
+.header__content {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: centers;
+}
+
+.header__content__h2 {
+  color: white;
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  margin-top: 4rem;
+  font-family: var(--main-font);
+}
+
+.header__contact-btn {
+  margin-top: 4rem;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgb(212, 175, 55);
+  border-radius: 0.5rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.section2,
+.section3,
+.section4 {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+.section__title {
+  font-family: var(--main-font);
+  font-size: 1.75rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.section2__text {
+  padding: 1rem;
+}
+
+.section2__img {
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.section2__list {
+  margin-top: 2rem;
+}
+
+.section2__list > li,
+.section2__list > p {
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  margin-top: 1rem;
+}
+
+.section2__list > p {
+  font-weight: 600;
+}
+
+.section3 > h2 {
+  font-size: 2rem;
+  font-family: var(--main-font);
+}
+
+.section3__cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.card__title {
+  font-family: var(--main-font);
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card__desc {
+  font-family: var(--main-font);
+  margin: 1rem 0;
+  font-size: 0.75rem;
+}
+
+.section4 {
+  background: rgba(166, 138, 82, 0.5);
+  background: radial-gradient(
+    circle,
+    rgba(166, 138, 82, 0.5) 0%,
+    rgb(80, 60, 25, 0.25) 100%
+  );
+  padding-bottom: 4rem;
+}
+.section4__title {
+  margin-top: 4rem;
+}
+.section4__text > p {
+  margin-top: 2rem;
+  font-family: var(--main-font);
+}
+
+.section4__form {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section4__form > input,
+.section4__form > textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+}
+
+.section4__form-require {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  font-size: 0.75rem;
+  font-family: var(--main-font);
+  position: relative;
+  top: 1rem;
+}
+.form-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.form_btn {
+  max-width: 10rem;
+  padding: 0.5rem 1rem;
+  background-color: #d4af37;
+  border: 0;
+  outline: 0;
+  font-family: var(--main-font);
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.section4__social {
+  margin-top: 4rem;
+}
+.section4__icons {
+  margin: 2rem;
+  font-size: 2rem;
+  color: #6e5b1c;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  .header__content__h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-top: 1rem;
+  }
+}

@@ -1,11 +1,16 @@
 import "./style.css";
 
-const splashImg = document.querySelector(".hero-splash");
-
-window.addEventListener("scroll", () => {
-  const dist = window.scrollY;
-
-  if (dist < 32) {
-    splashImg.style.transform = `translateY(${dist / 8}px)`;
-  }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      // entry.target.classList.remove("show");
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => {
+  observer.observe(el);
 });
