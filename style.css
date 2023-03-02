@@ -72,10 +72,7 @@ body {
 .app {
   padding: 1rem;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-}
+
 .fa-share-nodes {
   font-size: 1.5rem;
   color: var(--clr-dark-yellow);
@@ -174,11 +171,14 @@ nav {
 .section2__list {
   margin-top: 0.5rem;
   padding: 1rem;
-
   font-family: var(--secondary-font);
   color: white;
   font-weight: 300;
   font-size: 1.25rem;
+}
+
+.skills {
+  margin-top: 0.5rem;
 }
 
 .hidden {
@@ -308,4 +308,11 @@ nav {
   font-size: 2rem;
   color: var(--clr-dark-yellow);
   padding: 1rem;
+}
+
+.separator-line {
+  height: 1px;
+  width: 95%;
+  margin: 1.5rem auto;
+  background-color: white;
 }
