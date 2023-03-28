@@ -147,8 +147,9 @@ body {
 .header__title {
   font-weight: 400;
   font-family: var(--secondary-font);
+  font-size: 3rem;
   font-size: clamp(2.25rem, 10vw, 3.75rem);
-  line-height: 100%;
+  line-height: 120%;
   color: black;
 }
 .header__content__subtitle {
@@ -202,6 +203,7 @@ body {
   width: clamp(3rem, calc(5vw + 1rem), 10rem);
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
+  margin: 4rem auto;
   margin: clamp(4rem, calc(10vw+2rem), 6rem) auto;
 }
 
@@ -366,6 +368,11 @@ body {
   letter-spacing: 1.5px;
 }
 
+.section5__social-title {
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
 .section5__social {
   margin-inline: auto;
   max-width: 70ch;
