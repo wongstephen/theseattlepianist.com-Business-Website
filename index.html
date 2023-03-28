@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/6abebc572e.js"
@@ -16,9 +19,29 @@
   <body>
     <main class="app">
       <header>
-        <nav>
+        <div class="nav__container">
           <p class="nav__title">shawn schlogel</p>
-        </nav>
+          <div class="nav__social">
+            <a
+              href="https://www.instagram.com/theseattlepianist/"
+              target="_blank"
+              referrer="noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/sschlogel"
+              target="_blank"
+              referrer="noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@sschlogel"
+              target="_blank"
+              referrer="noreferrer"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
         <div class="header__content">
           <div>
             <h1 class="header__title">Creating Unforgettable Moments</h1>
@@ -27,53 +50,62 @@
               piano performances of your favorite songs.
             </p>
             <div class="header__button-container">
-              <button class="header__contact-btn">Contact Me</button>
+              <a href="#contact">
+                <button class="header__contact-btn">Contact Me</button>
+              </a>
             </div>
           </div>
           <div class="header__hero-img">
             <picture>
               <source
-                srcset="/assets/keyboard-desktop.webp"
+                srcset="/public/assets/keyboard-desktop.webp"
                 media="(min-width: 550px)"
               />
               <img
-                src="/assets/keyboard-mobile.webp"
+                src="/public/assets/keyboard-mobile.webp"
                 alt="event keyboard"
                 class="hero-mobile"
               />
             </picture>
+            
           </div>
         </div>
       </header>
+      
+      <hr class="hr__sections" ></hr>    
 
       <section class="section section2">
-        <div class="section2__img">
+      <div class="section2__img">
           <picture>
             <source
-              srcset="/assets/party-desktop.webp"
+              srcset="public/assets/header-web.jpg"
               media="(min-width: 550px)"
             />
             <img
-              src="/assets/party-mobile.webp"
-              class="crowd-piano-img"
+            srcset="public/assets/header-web.jpg"
+            class="crowd-piano-img"
               alt="party scene"
             />
           </picture>
-        </div>
+          <p class="section2__attribition">Photograph Courtesy of Carol</p>
+      </div>
         <div class="section2__content">
           <p class="section2__title">
             I bring my passion from music to events, teaching, and performances.
           </p>
-          <hr class="separator-line" />
+          <p class="section2__list-desc">I'm a pianist with 13 years of experience. I've taught college, toured worldwide, and played for private events. My specialty is keyboard piano, and I perform music ranging from classical to contemporary. I'm available for solo gigs and collaborations with bands. I also offer private lessons, specializing in youth instruction.</p>
+          <p class="section2__list-heading">I am available to book for: </p>
           <ul class="section2__list">
-            <li class="hidden skills">Event Entertainment</li>
-            <li class="hidden skills">Band Performance</li>
-            <li class="hidden skills">Solo Piano Performance</li>
-            <li class="hidden skills">Teaching & Tutoring</li>
+            <li class=" skills">Event Entertainment</li>
+            <li class=" skills">Band Performance</li>
+            <li class=" skills">Solo Piano Performance</li>
+            <li class=" skills">Teaching & Tutoring</li>
           </ul>
         </div>
       </section>
-      <section class="section section4">
+      
+      <hr class="hr__sections" ></hr>    
+      <section class="section section4" id="contact">
         <div class="section4__text">
           <h2 class="section__title section4__title">Let's get in touch</h2>
           <p>
@@ -82,7 +114,7 @@
           </p>
           <div class="section4__email-text">
             <p>
-              You can email me at: <a href="">shawn@seattlepeepee.com</a> or
+              You can call at (206)-555-1234, email me at: <a href="">shawn@seattlepeepee.com</a> or
               send me a message below
             </p>
           </div>
@@ -116,25 +148,44 @@
             rows="10"
             name="message"
             aria-label="Your message"
-            placeholder="Your Message"
+            placeholder="Tell me a little more about your event (date, time, etc..)"
           ></textarea>
-          <button class="form_btn">Send Mesage</button>
+          <button class="form__btn">Send Mesage</button>
         </form>
-        <div class="section4__social">
-          <h2 class="section4__social-title">
+      </section>
+      <hr class="hr__sections" ></hr>    
+      <section>
+        <div class="section5__social">
+          <h2 class="section5__social-title">
             Connect with me on social media using the icons below to stay
             updated on my latest events.
           </h2>
-          <div>
-            <a href=""
-              ><i class="fa-brands fa-instagram section4__icons"></i
-            ></a>
-            <a href=""><i class="fa-brands fa-youtube section4__icons"></i></a>
+          <div class="section5__social-container">
+            <a
+            href="https://www.instagram.com/theseattlepianist/"
+            target="_blank"
+            referrer="noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/sschlogel"
+            target="_blank"
+            referrer="noreferrer"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@sschlogel"
+            target="_blank"
+            referrer="noreferrer"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
           </div>
         </div>
       </section>
-
       <script type="module" src="/main.js"></script>
     </main>
+    <footer>
+      Shawn Schlogel 2023
+    </footer>
   </body>
 </html>
