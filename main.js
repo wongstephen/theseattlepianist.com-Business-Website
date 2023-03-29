@@ -20,7 +20,7 @@ const handleSubmit = (event) => {
   const myForm = event.target;
   const formData = new FormData(myForm);
 
-  fetch("/", {
+  fetch("https://shawnschlogelmusic.netlify.app/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
