@@ -192,6 +192,7 @@ body {
 }
 .header__hero-img {
   margin-top: 6rem;
+  width: 100%;
 }
 .hero-mobile {
   width: 100%;
