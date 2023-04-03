@@ -16,6 +16,7 @@ class Observer {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          console.log(this._showClass);
           entry.target.classList.add(this._showClass);
         } else {
           // entry.target.classList.remove(this._showClass);
