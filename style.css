@@ -454,20 +454,22 @@ footer {
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* .hidden-title {
-  filter: blur(1px);
-  transform: translateX(-50%);
-  transition: all;
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+.hidden-title {
+  /* filter: blur(1px); */
+  transform: (-100px, 0px);
+  opacity: 0;
+  /* property name | duration | easing function | delay */
+  transition: opacity 2s ease-in-out 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .hidden-title:nth-child(1) {
   transition-delay: 200ms;
 }
 .show-title.hidden-title {
-  transform: translateX(0);
-  filter: blur(0);
-} */
+  /* transform: translate(0px, 0px); */
+  opacity: 1;
+  /* filter: blur(0); */
+}
 /* .skills:nth-child(1) {
   transition-delay: 200ms;
 }

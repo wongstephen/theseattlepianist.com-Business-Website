@@ -34,8 +34,8 @@ class Observer {
 const mainImg = new Observer("show-bottom", "hidden-bottom");
 mainImg.addObserver();
 
-// const title = new Observer("show-title", "hidden-title");
-// title.addObserver();
+const title = new Observer("show-title", "hidden-title");
+title.addObserver();
 
 const date = new Date().getFullYear();
 const footer = document.querySelector("footer");
