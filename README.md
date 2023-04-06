@@ -1,7 +1,3 @@
-# seattlepianist
+# Theseattlepianist.com
 
 Created for Shawn Schlogel
-
-Todo
-
-- Make responsive

@@ -182,9 +182,13 @@ body {
   line-height: 100%;
   cursor: pointer;
 }
+
 .form__btn:hover,
 .header__contact-btn:hover {
   background-color: var(--clr-dark-yellow-hover);
+  transform: translate(0px, -2px);
+  transition: transform 0.22s ease-in-out 0.022s;
+  box-shadow: 0px 4 px 4px rgba(0, 0, 0, 0.25);
 }
 .header__contact-btn:active,
 .form__btn:active {
@@ -425,49 +429,66 @@ footer {
 }
 
 /* hidden show utility */
+/* property name | duration | easing function | delay */
 
 .header__hero-img {
   overflow: hidden;
 }
-.hidden-bottom {
+.img-hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(100%);
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translateY(10%);
 }
 
-.hidden-bottom.show-bottom {
+.img-hidden.img-show {
   height: auto;
   opacity: 1;
   filter: blur(0px);
   transform: translateY(0);
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   transition-delay: 0.222s;
-  transition-duration: 1750ms;
+  transition-duration: 1.25s;
 }
 
-.hidden-title {
+.title-hidden {
   transform: translateX(-1rem);
   opacity: 0;
-  /* property name | duration | easing function | delay */
 }
-.show-title {
+.title-show {
   transition: transform 0.5s ease-in-out, opacity 0.5s;
   transform: translateX(0px);
   opacity: 1;
 }
-.show-title:nth-child(2) {
+.title-show:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* .skills:nth-child(1) {
-    transition-delay: 200ms;
-  }
-  .skills:nth-child(2) {
-    transition-delay: 400ms;
-  }
-  .skills:nth-child(3) {
-    transition-delay: 600ms;
-  }
-  .skills:nth-child(4) {
-    transition-delay: 800ms;
-  } */
+.contactBtn-hidden {
+  opacity: 0;
+}
+.contactBtn-show {
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+.services-hidden {
+  transform: translate(0px, 1.5rem);
+  opacity: 0;
+}
+
+.services-show {
+  transition: transform 1s, opacity 1s;
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.services-show:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.services-show:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.services-show:nth-child(4) {
+  transition-delay: 0.75s;
+}
