@@ -46,20 +46,32 @@ const date = new Date().getFullYear();
 const footer = document.querySelector("footer");
 footer.innerText += " " + date;
 
+// comment modal
+const commentModal = document.querySelector(".commentModal-hidden");
+
 // comment form
 const commentForm = document.querySelector(".section4__form");
 commentForm.addEventListener("submit", handleSubmit);
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   console.log("click");
   const formData = new FormData(e.target);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
+  const formInput = document.querySelectorAll(".form__input");
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+    commentModal.classList.add("commentModal-show");
+    formInput.forEach((input) => (input.value = ""));
+    setTimeout(() => {
+      commentModal.classList.remove("commentModal-show");
+    }, 5000);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    window.scrollTo(0, 0);
+  }
 }

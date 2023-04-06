@@ -318,6 +318,29 @@ body {
   margin-top: 1.5rem;
 }
 
+.commentModal {
+  position: absolute;
+  top: 0;
+  max-width: 30rem;
+  width: 100%;
+  background-color: white;
+  font-size: 1.25rem;
+  padding: 2rem;
+  left: 50%;
+  top: 4rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+  font-family: var(--main-font);
+}
+.commentModal-hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out 0.0222s;
+}
+.commentModal-show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out 0.0222s;
+}
+
 .form-label {
   border: 0;
   clip: rect(0 0 0 0);
