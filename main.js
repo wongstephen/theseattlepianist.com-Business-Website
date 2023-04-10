@@ -8,8 +8,6 @@ class Observer {
   }
   getHiddenElements() {
     const hiddenElements = document.querySelectorAll("." + this._hiddenClass);
-    //console.log(hiddenElements);
-    //returns arr of hidden elements
     return hiddenElements;
   }
   addObserver() {
