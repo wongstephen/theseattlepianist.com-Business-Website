@@ -118,12 +118,13 @@ body {
 .section5__social-container > * {
   color: var(--clr-dark-yellow);
   font-size: 1.25rem;
+  border-bottom: 4px solid transparent;
 }
 .nav__social > *:hover,
 .section5__social-container > *:hover {
   color: var(--clr-dark-yellow-hover);
-
-  text-shadow: 0 0 20px rgba(190, 162, 72, 0.75);
+  text-shadow: 0 0 20px rgba(190, 162, 72, 0.25);
+  border-bottom: 4px solid var(--clr-dark-yellow);
 }
 .nav__social > *:active,
 .nav__social > *:focus,
