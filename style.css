@@ -23,6 +23,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Remove default margin */
@@ -236,8 +237,10 @@ body {
   transform: rotate(90deg);
   position: absolute;
   bottom: 6rem;
-  right: -5rem;
+  right: -4.5rem;
   color: white;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  padding-inline: 0.5rem;
 }
 .section2__title {
   background-color: var(--clr-dark-yellow);
