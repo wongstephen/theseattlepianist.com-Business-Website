@@ -4,7 +4,7 @@ services:
     container_name: shawn_public
     build:
       context: .
-      # dockerfile: dockerfile
+      dockerfile: dockerfile
     volumes:
       - ".:/app"
       - "/app/node_modules"
